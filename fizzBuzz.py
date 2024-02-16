@@ -12,12 +12,12 @@ class Solution:
                 hasil.append(str(i))
         return hasil
 
-x = int(input())
-result = Solution().fizzBuzz(x)
+n = int(input())
+hasil_list = Solution().fizzBuzz(n)
 list_to_string = "["
 index = 0
-for item in result:
-    if index == len(result) - 1:
+for item in hasil_list:
+    if index == len(hasil_list) - 1:
         list_to_string += '"' + str(item) + '"]'
         break
     list_to_string += '"' + str(item) + '",'
